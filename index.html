@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <!-- タイトル -->
+  <title>トップ - Portfolio by Ryosuke Kimura</title>
+
+  <!-- ディスクリプション/キーワード -->
+  <meta name=”description” content=”木村瞭介によるportfolioです。webサイト、ロゴ、名刺、プロダクトデザインを掲載しています。”> 
+  <meta name="keywords" content="portfolio, ポートフォリオ, web, webサイト, Ryosuke Kimura, 木村 瞭介, Logo, ロゴ, Business Card, 名刺, Product Design, プロダクトデザイン, profile, プロフィール">
+
+  <!-- ブラウザ設定の初期化 -->
+  <link rel="stylesheet" href="css/ress.css">
+
+  <!-- favicon要求を回避 -->
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+  <!-- google fonts取得 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+  <!-- css読み込み -->
+  <!-- スマホ -->
+  <link rel="stylesheet" href="css/sp.css" media="only screen and (max-width: 640px)">
+  <!-- タブレット -->
+  <link rel="stylesheet" href="css/tb.css" media="only screen and (min-width: 641px) and (max-width: 1039px)" >
+  <!-- デスクトップ -->
+  <link rel="stylesheet" href="css/style.css" media="only screen and (min-width: 1040px)">
+  
+  <!-- FontAwsome icon画像取得 -->
+  <script src="https://kit.fontawesome.com/c1b04e277a.js" crossorigin="anonymous"></script>
+  
+  <!-- jquery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.7.0/d3.min.js"></script>
+  <script>
+      window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js"><\/script>')
+  </script>
+  <script src="js/main.js"></script>
+</head>
+
+<body id="index">
+  <!-- ヘッダー -->
+  <header>
+    <div id="headerLogo"><a href="#index"><img src="images/logo.png" alt="From Here. ここから。"></a></div>
+    <nav id="headerMenu">
+      <ul>
+        <li><a href="web.html">Works.</a></li>
+        <li><a href="about.html">About.</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- メイン -->
+  <main>
+    <div id="mainVisual">
+      <h1>
+        <p>心地よく</p>
+        <p>心を動かす</p>
+      </h1>
+    </div>
+    <h2>Works.</h2>
+    <div class="container">
+      <section id="web">
+        <h3>Web</h3>
+        <ul class="webContents">
+          <li class="webContentsList">
+            <div class="webVisual">
+              <a href="web.html#matoi"><img src="images/siteVisual_matoi.jpg" alt="ジェンダーレスアクセサリーブランドマトイ"></a>
+            </div>
+            <div class="webInfo">
+              <div class="webTitle">
+                <h4>matoi</h4>
+                <p>Theme | ジェンダーレスアクセサリーブランド</p>
+              </div>
+              <ul class="webDetail">
+                <li>制作年月日：2021/07/28</li>
+                <li>制作期間：24days/ Design + Coding</li>
+                <li>制作環境：Illustrator/ Photoshop/ HTML/ CSS/ jQuery</li>
+              </ul>
+            </div>
+          </li>
+          <li class="webContentsList">
+            <div class="webVisual">
+              <a href="web.html#portfolio"><img src="images/siteVisual_portfolio.jpg" alt="ポートフォリオサイト"></a>
+            </div>
+            <div class="webInfo">
+              <div class="webTitle">
+                <h4>Portfolio</h4>
+                <p>Theme | 心地よく 心を動かす</p>
+              </div>
+              <ul class="webDetail">
+                <li>制作年月日：2021/08/15</li>
+                <li>制作期間：12days/ Design + Coding</li>
+                <li>制作環境：Illustrator/ Photoshop/ HTML/ CSS/ jQuery</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="logo">
+        <h3>Logo</h3>
+        <ul>
+          <li><a href="logo.html#loveYourself"><img src="images/logoDesign_inochinodenwa.png" alt="群馬県いのちの電話ロゴ応募作品"></a></li>
+          <li><a href="logo.html#mitsuyaSoda"><img src="images/logoDesign_mitsuya.png" alt="三ツ矢サイダーボトルデザインコンテスト応募作品"></a></li>
+          <li><a href="logo.html#bonten"><img src="images/logoDesign_bonten.png" alt="伊達政宗をモチーフとしたジュエリーブランドのロゴ"></a></li>
+        </ul>
+      </section>
+      <section id="businessCard">
+        <h3>Business Card</h3>
+        <ul>
+          <li><a href="businessCard.html#shrine"><img src="images/businessCardDesign_tsukijinjya.png" alt="架空の神社の名刺"></a></li>
+        </ul>
+      </section>
+      <section id="productDesign">
+        <h3>Product Design</h3>
+        <ul>
+          <li><a href="productDesign.html#wowStool"><img src="images/productDesign_wowstool.jpg" alt="ワオキツネザルモチーフのスツール"></a></li>
+          <li><a href="productDesign.html#hajimeBook"><img src="images/productDesign_hajimebook.jpg" alt="絵本「はじめのはなし」"></a></li>
+          <li><a href="productDesign.html#bonten"><img src="images/productDesign_bonten.jpg" alt="伊達政宗モチーフのジュエリーブランドボンテン"></a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <div class="container">
+      <div id="fixedBtn">
+        <a href="#index" id="returnTop">
+          <p>Top</p>
+        </a>
+      </div>
+      <ul>
+        <li><a href="web.html">Works.</a></li>
+        <li><a href="about.html">About.</a></li>
+      </ul>
+      <p><small>Portfolio by Ryosuke Kimura</small></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

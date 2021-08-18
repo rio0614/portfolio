@@ -1,0 +1,506 @@
+@charset "UTF-8";
+/* 
+========================================
+全体の初期設定
+========================================
+*/
+* {
+  text-decoration: none;
+  list-style-type: none;
+}
+/* コンテナの設定 */
+.container {
+  margin: 0 20px;
+}
+/* 画像のブロック要素化 */
+img {
+  display: block;
+}
+/* aタグのブロック要素化 */
+a {
+  display: block;
+  transition: all 0.5s;
+}
+
+/* 
+========================================
+ヘッダー設定
+========================================
+*/
+header {
+  position: relative;
+  height: 270px;
+  margin: 0 auto;
+}
+header #headerLogo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+header #headerMenu {
+  position: absolute;
+  bottom: 36px;
+  right: 50px;
+}
+header #headerMenu ul {
+  font-size: 0;
+}
+header #headerMenu li {
+  font-size: initial;
+  display: inline-block;
+}
+header #headerMenu li:first-child {
+  margin-right: 25px;
+}
+header #headerMenu li a {
+  color: #1f5827;
+  position: relative;
+}
+
+/* 
+========================================
+フッター設定
+========================================
+*/
+footer {
+  padding-bottom: 50px;
+  position: relative;
+}
+footer ul {
+  font-size: 0;
+  text-align: center;
+  margin-bottom: 70px;
+}
+footer ul li {
+  font-size: initial;
+  display: inline-block;
+}
+footer ul li:first-child {
+  margin-right: 25px;
+}
+footer ul li a {
+  color: #1f5827;
+  position: relative;
+}
+footer li a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #1f5827;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform 0.3s;
+}
+footer li a:hover::after {
+  transform: scale(1, 1);
+}
+footer p {
+  color: #1f5827;
+  text-align: right;
+}
+#returnTop {
+  position: relative;
+  display: block;
+  height: 80px;
+  width: 80px;
+  color: #fff;
+  background-color: rgba(31, 88, 39, 1);
+  border-radius: 50%;
+  font-size: 1.25rem;
+  padding: 23px;
+  transition: 0.5s;
+}
+#returnTop p {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -18.315px;
+}
+#fixedBtn {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 5;
+  bottom: 70px;
+  right: 60px;
+  transition: all 0.5s;
+}
+#fixedBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+#fixedBtn.absolute {
+  position: absolute;
+  top: -100px;
+  bottom: auto;
+}
+
+/* 
+========================================
+トップページ：メインビジュアル設定
+========================================
+*/
+#index #mainVisual {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/mainVisual_sp.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+#index #mainVisual h1 {
+  font-family: "Noto Sans JP", sans-serif;
+  position: absolute;
+  top: 50%;
+  right: 13%;
+  margin-top: -51px;
+  color: #fff;
+  background-color: rgba(189, 204, 195, 0.6);
+  box-shadow: 0 0 15px 15px rgb(189, 204, 195, 0.6);
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 2.5rem;
+}
+#index #mainVisual h1 p:nth-child(2) {
+  margin-left: 1.3rem;
+}
+
+/* 
+========================================
+トップページ：各セクション設定
+========================================
+*/
+#index main {
+  color: #555555;
+}
+#index main h2 {
+  color: #1f5827;
+  margin-top: 55px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+#index main h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 40px;
+  padding: 0 10px 5px;
+  border-bottom: 1px solid #555555;
+}
+#index main section {
+  margin-bottom: 200px;
+}
+
+/* 
+========================================
+トップページ：Webセクション設定
+========================================
+*/
+#index .webContents {
+  width: 100%;
+}
+#index .webContentsList {
+  width: 90%;
+  margin: 0 auto 100px;
+}
+#index .webVisual {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#index .webVisual a {
+  border: 1px solid #ddd;
+}
+#index .webVisual img {
+  max-width: 100%;
+  height: auto;
+}
+#index .webInfo .webTitle {
+  margin-bottom: 10px;
+}
+#index .webInfo .webTitle h4 {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  margin-bottom: 5px;
+}
+#index .webInfo .webTitle p {
+  color: #4b4d4c;
+  font-size: 1.1rem;
+}
+#index .webInfo .webDetail li {
+  margin-bottom: 2px;
+}
+#index .webInfo .webDetail li:nth-child(3) {
+  margin-bottom: 0;
+}
+/* 
+========================================
+トップページ：logoセクション設定
+========================================
+*/
+#index #logo ul li {
+  width: 80%;
+  margin: 0 auto 50px;
+}
+#index #logo ul li img {
+  width: 100%;
+  height: auto;
+}
+
+/* 
+========================================
+トップページ：businessCardセクション設定
+========================================
+*/
+#index #businessCard ul li {
+  width: 80%;
+  margin: 0 auto 50px;
+}
+#index #businessCard ul li img {
+  width: 100%;
+  height: auto;
+}
+
+/* 
+========================================
+トップページ：productDesignセクション設定
+========================================
+*/
+#index #productDesign ul li {
+  width: 80%;
+  margin: 0 auto 50px;
+}
+#index #productDesign ul li img {
+  width: 100%;
+  height: auto;
+}
+
+/* 
+========================================
+制作ページ（共通）
+========================================
+*/
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.common h1 {
+  color: #1f5827;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+#switchWorks {
+  font-size: 0;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+#switchWorks li {
+  display: inline-block;
+  margin-right: 25px;
+  font-size: initial;
+}
+#switchWorks li:last-child {
+  margin-right: 0;
+}
+#switchWorks li a {
+  color: #555555;
+}
+.common main h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 5px;
+  color: #555555;
+  border-bottom: 1px solid #555555;
+}
+.common .workItem {
+  margin-bottom: 150px;
+}
+.common main img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 10px;
+}
+.common .mainInfo {
+  color: #4b4d4c;
+  margin-bottom: 20px;
+}
+.common .mainInfo i {
+  color: #4b4d4c;
+}
+.common .mainInfo h3.webTitle {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  color: #4b4d4c;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.common .mainInfo a {
+  float: left;
+}
+.common .webDetail {
+  display: inline-block;
+  padding: 2px 0 2px 15px;
+  margin-left: 20px;
+  border-left: 2px solid #4b4d4c;
+}
+.common .webDetail li {
+  margin-bottom: 2px;
+}
+.common .webDetail li:last-child {
+  margin-bottom: 0;
+}
+.common .subInfo p {
+  font-size: 1.1rem;
+  color: #4b4d4c;
+  margin-bottom: 15px;
+}
+.common .pointDescription ul {
+  padding-left: 40px;
+  color: #4b4d4c;
+}
+.common .pointDescription ul li {
+  list-style-type: circle;
+  margin-bottom: 5px;
+}
+.common .pointDescription ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* 
+========================================
+制作ページ（各ページ）
+========================================
+*/
+#web .workItem a img {
+  border: 1px solid #ddd;
+}
+.others .wrapper {
+  width: 100%;
+}
+.others .workItem {
+  width: 90%;
+  margin: 0 auto 150px;
+}
+.others .workItem img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+.others .workVisual {
+  margin-bottom: 20px;
+}
+.others .mainInfo a {
+  float: none;
+}
+.others .mainInfo .webDetail {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: 30px;
+  display: block;
+}
+
+/* 
+========================================
+自己紹介ページ（about）
+========================================
+*/
+#about h1 {
+  color: #1f5827;
+  margin-top: 20px;
+  margin-bottom: 75px;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+#about #profile {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto 100px;
+}
+#about #profilePhoto img {
+  width: 100%;
+  height: auto;
+}
+#about #intro {
+  width: 40%;
+  margin-left: 30px;
+}
+#about #name {
+  margin-bottom: 30px;
+  color: #4b4d4c;
+}
+#about #name h2 {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-bottom: 5px;
+}
+#about #name h3 {
+  font-size: 0.9rem;
+}
+#about #profileDescription {
+  color: #4b4d4c;
+}
+#about #profileDescription p:first-child {
+  color: #3f924b;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#about #profileDescription p:nth-child(2) {
+  line-height: 1.8rem;
+}
+#about h4 {
+  margin: 0 auto 60px;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+  padding: 0 20px 20px;
+  color: #555555;
+  border-bottom: 1px solid #555555;
+}
+#about #profileContent {
+  margin: 0 auto 275px;
+  width: 600px;
+}
+#about #profileContent h5 {
+  color: #90b795;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+#about #profileContent p {
+  margin-bottom: 40px;
+  color: #4b4d4c;
+  text-align: left;
+  line-height: 1.8rem;
+}
+#about #profileContent span {
+  display: inline;
+}
+#about #skills {
+  font-size: 0;
+  width: 90%;
+  margin: 0 auto 150px;
+}
+#about #skills li {
+  display: inline-block;
+  width: 25%;
+  padding: 15px;
+}
+#about #skills li img {
+  width: 100%;
+  height: auto;
+}

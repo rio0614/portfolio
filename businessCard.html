@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <!-- タイトル -->
+  <title>名刺制作 - Portfolio by Ryosuke Kimura</title>
+
+  <!-- ディスクリプション/キーワード -->
+  <meta name=”description” content=”デザインした名刺の紹介ページです。”> 
+  <meta name="keywords" content="portfolio, ポートフォリオ, Ryosuke Kimura, 木村 瞭介, Business Card, 名刺">
+
+  <!-- ブラウザ設定の初期化 -->
+  <link rel="stylesheet" href="css/ress.css">
+
+  <!-- favicon要求を回避 -->
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+  <!-- css読み込み -->
+  <!-- スマホ -->
+  <link rel="stylesheet" href="css/sp.css" media="only screen and (max-width: 640px)">
+  <!-- タブレット -->
+  <link rel="stylesheet" href="css/tb.css" media="only screen and (min-width: 641px) and (max-width: 1039px)" >
+  <!-- デスクトップ -->
+  <link rel="stylesheet" href="css/style.css" media="only screen and (min-width: 1040px)">
+  
+  <!-- FontAwsome icon画像取得 -->
+  <script src="https://kit.fontawesome.com/c1b04e277a.js" crossorigin="anonymous"></script>
+  
+  <!-- jquery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.7.0/d3.min.js"></script>
+  <script>
+      window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js"><\/script>')
+  </script>
+  <script src="js/main.js"></script>
+</head>
+
+<body id="businessCard" class="common others">
+  <!-- ヘッダー -->
+  <header>
+    <div id="headerLogo"><a href="index.html"><img src="images/logo.png" alt="From Here. ここから。"></a></div>
+    <nav id="headerMenu">
+      <ul>
+        <li><a href="web.html">Works.</a></li>
+        <li><a href="about.html">About.</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- メイン -->
+  <main>
+    <h1>Works.</h1>
+    <ul id="switchWorks">
+      <li><a href="web.html">Web</a></li>
+      <li><a href="logo.html">Logo</a></li>
+      <li><a href="#businessCard">Business Card</a></li>
+      <li><a href="productDesign.html">Product Design</a></li>
+    </ul>
+    <div class="container">
+      <h2>Business Card</h2>
+      <div class="wrapper">
+        <ul id="workItemsList">
+          <li class="workItem" id="shrine">
+            <div class="workVisual">
+              <img src="images/businessCardDesign_tsukijinjya.png" alt="架空の神社の名刺">
+            </div>
+            <div class="infos">
+              <div class="mainInfo">
+                <h3 class="webTitle">月神社</h3>
+                <ul class="webDetail">
+                  <li>制作年月日：2021/05/30</li>
+                  <li>制作期間：2days/ Design</li>
+                  <li>制作環境：Illustrator/ Photoshop</li>
+                </ul>
+              </div>
+              <div class="subInfo">
+                <p>Theme | 月神社の名刺（架空）</p>
+                <p>Concept | 伝統ある神社の継承</p>
+                <p>Target | 神社取引先</p>
+                <p>Goal | 神社の認知度向上</p>
+                <div class="pointDescription">
+                  <p>Point | 制作の工夫</p>
+                  <ul>
+                    <li>神社の家紋をパターンであしらい、印象付ける</li>
+                    <li>彩度を下げた優しい色味で神社らしい落ち着きを表現</li>
+                    <li>明朝体を使い、伝統ある神社という認識を高める</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <div class="container">
+      <div id="fixedBtn">
+        <a href="#businessCard" id="returnTop">
+          <p>Top</p>
+        </a>
+      </div>
+      <ul>
+        <li><a href="web.html">Works.</a></li>
+        <li><a href="about.html">About.</a></li>
+      </ul>
+      <p><small>Portfolio by Ryosuke Kimura</small></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

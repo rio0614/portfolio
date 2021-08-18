@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <!-- タイトル -->
+  <title>web制作 - Portfolio by Ryosuke Kimura</title>
+
+  <!-- ディスクリプション/キーワード -->
+  <meta name=”description” content=”制作したwebサイトの紹介ページです。”> 
+  <meta name="keywords" content="portfolio, ポートフォリオ, web, webサイト, Ryosuke Kimura, 木村 瞭介">
+
+  <!-- ブラウザ設定の初期化 -->
+  <link rel="stylesheet" href="css/ress.css">
+
+  <!-- favicon要求を回避 -->
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+  <!-- css読み込み -->
+  <!-- スマホ -->
+  <link rel="stylesheet" href="css/sp.css" media="only screen and (max-width: 640px)">
+  <!-- タブレット -->
+  <link rel="stylesheet" href="css/tb.css" media="only screen and (min-width: 641px) and (max-width: 1039px)" >
+  <!-- デスクトップ -->
+  <link rel="stylesheet" href="css/style.css" media="only screen and (min-width: 1040px)">
+  
+  <!-- FontAwsome icon画像取得 -->
+  <script src="https://kit.fontawesome.com/c1b04e277a.js" crossorigin="anonymous"></script>
+  
+  <!-- jquery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.7.0/d3.min.js"></script>
+  <script>
+      window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js"><\/script>')
+  </script>
+  <script src="js/main.js"></script>
+</head>
+
+<body id="web" class="common">
+  <!-- ヘッダー -->
+  <header>
+    <div id="headerLogo"><a href="index.html"><img src="images/logo.png" alt="From Here. ここから。"></a></div>
+    <nav id="headerMenu">
+      <ul>
+        <li><a href="#web">Works.</a></li>
+        <li><a href="about.html">About.</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- メイン -->
+  <main>
+    <h1>Works.</h1>
+    <ul id="switchWorks">
+      <li><a href="#web">Web</a></li>
+      <li><a href="logo.html">Logo</a></li>
+      <li><a href="businessCard.html">Business Card</a></li>
+      <li><a href="productDesign.html">Product Design</a></li>
+    </ul>
+    <div class="container">
+      <h2>Web</h2>
+      <div class="wrapper">
+        <ul id="workItemsList">
+          <li class="workItem" id="matoi">
+            <a href="https://rio0614.github.io/matoi/" target="_blank"><img src="images/siteVisual_matoi.jpg" alt="ジェンダーレスアクセサリーブランドマトイ" width="800px" height="447px"></a>
+            <div class="infos">
+              <div class="mainInfo">
+                <a href="https://rio0614.github.io/matoi/" target="_blank"><h3 class="webTitle">matoi</h3>
+                <i class="far fa-window-restore"></i></a>
+                <ul class="webDetail">
+                  <li>制作年月日：2021/07/28</li>
+                  <li>制作期間：24days/ Design + Coding</li>
+                  <li>制作環境：Illustrator/ Photoshop/ HTML/ CSS/ jQuery</li>
+                </ul>
+              </div>
+              <div class="subInfo">
+                <p>Theme | ジェンダーレスアクセサリーブランド</p>
+                <p>Concept | 自分らしさを身に纏う</p>
+                <p>Target | 20~25歳男女</p>
+                <p>Goal | コンセプトの浸透とブランドの認知度向上</p>
+                <div class="pointDescription">
+                  <p>Point | 制作の工夫</p>
+                  <ul>
+                    <li>スマホやタブレットへのレスポンシブ対応</li>
+                    <li>レスポンシブ時の文章整列と折り返しの切り替え</li>
+                    <li>視線誘導のアニメーションをファーストビューに導入</li>
+                    <li>コンセプトが重要であるため、メインビジュアルのみサンセリフ体とゴシック体にして強調</li>
+                    <li>ファーストビューをウィンドウサイズに広げてインパクトを演出</li>
+                    <li>ヘッダーは初期表示では背景色を透明にし、ビジュアルを邪魔しないように調整</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="workItem" id="portfolio">
+            <a href="https://www.portfolio-by-rio.com/"><img src="images/siteVisual_portfolio.jpg" alt="ポートフォリオサイト" width="800px" height="447px"></a>
+            <div class="infos">
+              <div class="mainInfo">
+                <a href="https://www.portfolio-by-rio.com/"><h3 class="webTitle">Portfolio</h3>
+                <i class="far fa-window-restore"></i></a>
+                <ul class="webDetail">
+                  <li>制作年月日：2021/08/15</li>
+                  <li>制作期間：12days/ Design + Coding</li>
+                  <li>制作環境：Illustrator/ Photoshop/ HTML/ CSS/ jQuery</li>
+                </ul>
+              </div>
+              <div class="subInfo">
+                <p>Theme | ポートフォリオサイト</p>
+                <p>Concept | 心地よく 心を動かす</p>
+                <p>Target | web制作依頼主（クライアント）</p>
+                <p>Goal | これまでの制作物と制作者について知ってもらう</p>
+                <div class="pointDescription">
+                  <p>Point | 制作の工夫</p>
+                  <ul>
+                    <li>スマホやタブレットへのレスポンシブ対応</li>
+                    <li>レスポンシブ時の文章整列と折り返しの切り替え</li>
+                    <li>1ページが長いため、トップへ戻るボタンを固定配置したユーザビリティ</li>
+                    <li>シンプル設計で画面読み込みスピードを意識</li>
+                    <li>制作物全体が掴めるようにトップページに作品一覧を並べて配置</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <div class="container">
+      <div id="fixedBtn">
+        <a href="#web" id="returnTop">
+          <p>Top</p>
+        </a>
+      </div>
+      <ul>
+        <li><a href="#web">Works.</a></li>
+        <li><a href="about.html">About.</a></li>
+      </ul>
+      <p><small>Portfolio by Ryosuke Kimura</small></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
