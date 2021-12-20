@@ -8,15 +8,12 @@
   text-decoration: none;
   list-style-type: none;
 }
-/* コンテナの設定 */
 .container {
   margin: 0 20px;
 }
-/* 画像のブロック要素化 */
 img {
   display: block;
 }
-/* aタグのブロック要素化 */
 a {
   display: block;
   transition: all 0.5s;
@@ -108,8 +105,7 @@ footer p {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -12px;
-  margin-left: -14.65px;
+  transform: translate(-50%, -50%);
 }
 #fixedBtn {
   opacity: 0;
@@ -117,7 +113,7 @@ footer p {
   position: fixed;
   z-index: 5;
   bottom: 70px;
-  left: 50%;
+  right: 20px;
   margin-left: -30px;
   transition: all 0.5s;
 }
@@ -128,7 +124,7 @@ footer p {
 #fixedBtn.absolute {
   position: absolute;
   top: -60px;
-  left: 50%;
+  right: 20px;
   margin-left: -30px;
   bottom: auto;
 }
@@ -146,7 +142,7 @@ footer p {
   background-size: cover;
   background-position: center center;
 }
-#index #mainVisual h1 {
+#index #mainVisual .mainVisualConcept {
   font-family: "Noto Sans JP", sans-serif;
   position: absolute;
   top: 50%;
@@ -160,8 +156,9 @@ footer p {
   font-size: 1.5rem;
   font-weight: normal;
   line-height: 2.5rem;
+  text-align: left;
 }
-#index #mainVisual h1 p:nth-child(2) {
+#index #mainVisual .mainVisualConcept p:nth-child(2) {
   margin-left: 1.3rem;
 }
 

@@ -4,32 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <!-- タイトル -->
   <title>web制作 - Portfolio by Ryosuke Kimura</title>
-
-  <!-- ディスクリプション/キーワード -->
   <meta name=”description” content=”制作したwebサイトの紹介ページです。”> 
   <meta name="keywords" content="portfolio, ポートフォリオ, web, webサイト, Ryosuke Kimura, 木村 瞭介">
 
-  <!-- ブラウザ設定の初期化 -->
   <link rel="stylesheet" href="css/ress.css">
 
-  <!-- favicon設定 -->
   <link rel="icon" href="favicon.ico" id="favicon">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
 
-  <!-- css読み込み -->
-  <!-- スマホ -->
   <link rel="stylesheet" href="css/sp.css" media="only screen and (max-width: 640px)">
-  <!-- タブレット -->
   <link rel="stylesheet" href="css/tb.css" media="only screen and (min-width: 641px) and (max-width: 1039px)" >
-  <!-- デスクトップ -->
   <link rel="stylesheet" href="css/style.css" media="only screen and (min-width: 1040px)">
   
-  <!-- FontAwsome icon画像取得 -->
   <script src="https://kit.fontawesome.com/c1b04e277a.js" crossorigin="anonymous"></script>
   
-  <!-- jquery読み込み -->
   <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.7.0/d3.min.js"></script>
   <script>
       window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js"><\/script>')
@@ -38,7 +27,6 @@
 </head>
 
 <body id="web" class="common">
-  <!-- ヘッダー -->
   <header>
     <div id="headerLogo"><a href="index.html"><img src="images/logo.png" alt="From Here. ここから。"></a></div>
     <nav id="headerMenu">
@@ -49,7 +37,6 @@
     </nav>
   </header>
   
-  <!-- メイン -->
   <main>
     <h1>Works.</h1>
     <ul id="switchWorks">
@@ -93,6 +80,7 @@
               </div>
             </div>
           </li>
+
           <li class="workItem" id="portfolio">
             <a href="https://www.portfolio-by-rio.com/"><img src="images/siteVisual_portfolio.jpg" alt="ポートフォリオサイト" width="800px" height="447px"></a>
             <div class="infos">
@@ -123,11 +111,12 @@
               </div>
             </div>
           </li>
-          <li class="workItem" id="bootstrap01">
+
+          <li class="workItem" id="bootstrap">
             <a href="https://rio0614.github.io/bootstrap01/"  target="_blank"><img src="images/siteVisual_bootstrap01.jpg" alt="bootstrapを利用したサイト制作" width="800px" height="447px"></a>
             <div class="infos">
               <div class="mainInfo">
-                <a href="https://rio0614.github.io/bootstrap01/"  target="_blank"><h3 class="webTitle">LP制作01</h3>
+                <a href="https://rio0614.github.io/bootstrap01/"  target="_blank"><h3 class="webTitle">デモサイト(Bootstrap)</h3>
                 <i class="far fa-window-restore"></i></a>
                 <ul class="webDetail">
                   <li>制作年月日：2021/09/30</li>
@@ -154,7 +143,6 @@
     </div>
   </main>
 
-  <!-- フッター -->
   <footer>
     <div class="container">
       <div id="fixedBtn">

@@ -4,37 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <!-- タイトル -->
   <title>トップ - Portfolio by Ryosuke Kimura</title>
-
-  <!-- ディスクリプション/キーワード -->
-  <meta name=”description” content=”木村瞭介によるportfolioです。webサイト、ロゴ、名刺、プロダクトデザインを掲載しています。”> 
+  <meta name=”description” content=”木村瞭介のportfolioです。webサイト、ロゴ、名刺、プロダクトデザインを掲載しています。”> 
   <meta name="keywords" content="portfolio, ポートフォリオ, web, webサイト, Ryosuke Kimura, 木村 瞭介, Logo, ロゴ, Business Card, 名刺, Product Design, プロダクトデザイン, profile, プロフィール">
 
-  <!-- ブラウザ設定の初期化 -->
   <link rel="stylesheet" href="css/ress.css">
 
-  <!-- favicon設定 -->
   <link rel="icon" href="favicon.ico" id="favicon">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
 
-  <!-- google fonts取得 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
-  <!-- css読み込み -->
-  <!-- スマホ -->
   <link rel="stylesheet" href="css/sp.css" media="only screen and (max-width: 640px)">
-  <!-- タブレット -->
   <link rel="stylesheet" href="css/tb.css" media="only screen and (min-width: 641px) and (max-width: 1039px)" >
-  <!-- デスクトップ -->
   <link rel="stylesheet" href="css/style.css" media="only screen and (min-width: 1040px)">
   
-  <!-- FontAwsome icon画像取得 -->
   <script src="https://kit.fontawesome.com/c1b04e277a.js" crossorigin="anonymous"></script>
   
-  <!-- jquery読み込み -->
   <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.7.0/d3.min.js"></script>
   <script>
       window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js"><\/script>')
@@ -43,9 +31,10 @@
 </head>
 
 <body id="index">
-  <!-- ヘッダー -->
   <header>
-    <div id="headerLogo"><a href="#index"><img src="images/logo.png" alt="From Here. ここから。"></a></div>
+    <div id="headerLogo"><a href="#index">
+      <h1><img src="images/logo.png" alt="From Here. ここから。"></h1>
+    </a></div>
     <nav id="headerMenu">
       <ul>
         <li><a href="web.html">Works.</a></li>
@@ -54,14 +43,14 @@
     </nav>
   </header>
   
-  <!-- メイン -->
   <main>
     <div id="mainVisual">
-      <h1>
+      <div class="mainVisualConcept">
         <p>心地よく</p>
         <p>心を動かす</p>
-      </h1>
+      </div>
     </div>
+
     <h2>Works.</h2>
     <div class="container">
       <section id="web">
@@ -105,7 +94,7 @@
             </div>
             <div class="webInfo">
               <div class="webTitle">
-                <h4>LP制作01</h4>
+                <h4>デモサイト(Bootstrap)</h4>
                 <p>Theme | Bootstrapを利用したサイト制作</p>
               </div>
               <ul class="webDetail">
@@ -117,6 +106,7 @@
           </li>
         </ul>
       </section>
+
       <section id="logo">
         <h3>Logo</h3>
         <ul>
@@ -125,12 +115,14 @@
           <li><a href="logo.html#bonten"><img src="images/logoDesign_bonten.png" alt="伊達政宗をモチーフとしたジュエリーブランドのロゴ"></a></li>
         </ul>
       </section>
+
       <section id="businessCard">
         <h3>Business Card</h3>
         <ul>
           <li><a href="businessCard.html#shrine"><img src="images/businessCardDesign_tsukijinjya.png" alt="架空の神社の名刺"></a></li>
         </ul>
       </section>
+
       <section id="productDesign">
         <h3>Product Design</h3>
         <ul>
@@ -142,7 +134,6 @@
     </div>
   </main>
 
-  <!-- フッター -->
   <footer>
     <div class="container">
       <div id="fixedBtn">
