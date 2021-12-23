@@ -50,12 +50,27 @@ header #headerMenu li {
   font-size: initial;
   display: inline-block;
 }
-header #headerMenu li:first-child {
-  margin-right: 25px;
+header #headerMenu li:not(:first-of-type) {
+  margin-left: 25px;
 }
-header #headerMenu li a {
+header #headerMenu li .headerMenuItem {
   color: #1f5827;
   position: relative;
+}
+#index header #headerMenu li .headerMenuItem.active::after,
+#web header #headerMenu li .headerMenuItem.active::after,
+#logo header #headerMenu li .headerMenuItem.active::after,
+#businessCard header #headerMenu li .headerMenuItem.active::after,
+#productDesign header #headerMenu li .headerMenuItem.active::after,
+#about header #headerMenu li .headerMenuItem.active::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #1f5827;
+  transform: scale(1, 1);
 }
 
 /* 
@@ -77,12 +92,27 @@ footer ul li {
   font-size: initial;
   display: inline-block;
 }
-footer ul li:first-child {
-  margin-right: 25px;
+footer ul li:not(:first-of-type) {
+  margin-left: 25px;
 }
-footer ul li a {
+footer ul li .footerMenuItem {
   color: #1f5827;
   position: relative;
+}
+#index footer .footerMenu li .footerMenuItem.active::after,
+#web footer .footerMenu li .footerMenuItem.active::after,
+#logo footer .footerMenu li .footerMenuItem.active::after,
+#businessCard footer .footerMenu li .footerMenuItem.active::after,
+#productDesign footer .footerMenu li .footerMenuItem.active::after,
+#about footer .footerMenu li .footerMenuItem.active::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #1f5827;
+  transform: scale(1, 1);
 }
 footer p {
   color: #1f5827;
@@ -305,11 +335,16 @@ footer p {
 #switchWorks li:last-child {
   margin-right: 0;
 }
-#switchWorks li a {
+#switchWorks li .worksMenuItem {
   color: #555555;
+  position: relative;
   line-height: 38.5px;
 }
-#switchWorks li a p {
+#switchWorks li .worksMenuItem.active {
+  background-color: #1f5827;
+  color: #fff;
+}
+#switchWorks li .worksMenuItem p {
   line-height: 40.5px;
 }
 .common main h2 {
@@ -382,6 +417,11 @@ footer p {
 */
 #web .workItem a img {
   border: 1px solid #ddd;
+}
+#web #corporation .pointDescription ul li a {
+  display: inline-block;
+  color: #1f5827b3;
+  font-weight: bold;
 }
 .others .wrapper {
   width: 100%;

@@ -9,7 +9,9 @@
   list-style-type: none;
 }
 .container {
-  margin: 0 50px;
+  width: 1366px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 img {
   display: block;
@@ -45,16 +47,32 @@ header #headerMenu ul {
 }
 header #headerMenu li {
   font-size: initial;
+  font-weight: bold;
   display: inline-block;
 }
-header #headerMenu li:first-child {
-  margin-right: 25px;
+header #headerMenu li:not(:first-of-type) {
+  margin-left: 25px;
 }
-header #headerMenu li a {
+header #headerMenu li .headerMenuItem {
   color: #1f5827;
   position: relative;
 }
-header #headerMenu li a::after {
+#index header #headerMenu li .headerMenuItem.active::after,
+#web header #headerMenu li .headerMenuItem.active::after,
+#logo header #headerMenu li .headerMenuItem.active::after,
+#businessCard header #headerMenu li .headerMenuItem.active::after,
+#productDesign header #headerMenu li .headerMenuItem.active::after,
+#about header #headerMenu li .headerMenuItem.active::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #1f5827;
+  transform: scale(1, 1);
+}
+header #headerMenu li .headerMenuItem::after {
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -66,7 +84,7 @@ header #headerMenu li a::after {
   transform-origin: center top;
   transition: transform 0.3s;
 }
-header #headerMenu li a:hover::after {
+header #headerMenu li .headerMenuItem:hover::after {
   transform: scale(1, 1);
 }
 
@@ -86,16 +104,32 @@ footer ul {
 }
 footer ul li {
   font-size: initial;
+  font-weight: bold;
   display: inline-block;
 }
-footer ul li:first-child {
-  margin-right: 25px;
+footer ul li:not(:first-of-type) {
+  margin-left: 25px;
 }
-footer ul li a {
+footer ul li .footerMenuItem {
   color: #1f5827;
   position: relative;
 }
-footer li a::after {
+#index footer .footerMenu li .footerMenuItem.active::after,
+#web footer .footerMenu li .footerMenuItem.active::after,
+#logo footer .footerMenu li .footerMenuItem.active::after,
+#businessCard footer .footerMenu li .footerMenuItem.active::after,
+#productDesign footer .footerMenu li .footerMenuItem.active::after,
+#about footer .footerMenu li .footerMenuItem.active::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #1f5827;
+  transform: scale(1, 1);
+}
+footer li .footerMenuItem::after {
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -107,7 +141,7 @@ footer li a::after {
   transform-origin: center top;
   transition: transform 0.3s;
 }
-footer li a:hover::after {
+footer li .footerMenuItem:hover::after {
   transform: scale(1, 1);
 }
 footer p {
@@ -343,11 +377,21 @@ footer p {
 #switchWorks li:last-child {
   margin-right: 0;
 }
-#switchWorks li a {
+#switchWorks li .worksMenuItem {
   color: #555555;
   position: relative;
 }
-#switchWorks li a::after {
+#switchWorks li .worksMenuItem.active::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #555555;
+  transform: scale(1, 1);
+}
+#switchWorks li .worksMenuItem::after {
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -359,7 +403,7 @@ footer p {
   transform-origin: center top;
   transition: transform 0.3s;
 }
-#switchWorks li a:hover::after {
+#switchWorks li .worksMenuItem:hover::after {
   transform: scale(1, 1);
 }
 .common main h2 {
@@ -423,7 +467,7 @@ footer p {
 }
 .common .pointDescription ul li {
   list-style-type: circle;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .common .pointDescription ul li:last-child {
   margin-bottom: 0;
@@ -436,6 +480,11 @@ footer p {
 */
 #web .workItem a img {
   border: 1px solid #ddd;
+}
+#web #corporation .pointDescription ul li a {
+  display: inline-block;
+  color: #1f5827b3;
+  font-weight: bold;
 }
 .others .wrapper {
   width: 100%;

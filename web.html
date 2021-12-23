@@ -31,19 +31,20 @@
     <div id="headerLogo"><a href="index.html"><img src="images/logo.png" alt="From Here. ここから。"></a></div>
     <nav id="headerMenu">
       <ul>
-        <li><a href="#web">Works.</a></li>
-        <li><a href="about.html">About.</a></li>
+        <li><a href="index.html" class="headerMenuItem">Home.</a></li>
+        <li><a href="#web" class="headerMenuItem active">Works.</a></li>
+        <li><a href="about.html" class="headerMenuItem">About.</a></li>
       </ul>
     </nav>
   </header>
   
   <main>
     <h1>Works.</h1>
-    <ul id="switchWorks">
-      <li><a href="#web">Web</a></li>
-      <li><a href="logo.html">Logo</a></li>
-      <li><a href="businessCard.html">Business Card</a></li>
-      <li><a href="productDesign.html">Product Design</a></li>
+    <ul id="switchWorks" class="worksMenu">
+      <li><a href="#web" class="worksMenuItem active">Web</a></li>
+      <li><a href="logo.html" class="worksMenuItem">Logo</a></li>
+      <li><a href="businessCard.html" class="worksMenuItem">Business Card</a></li>
+      <li><a href="productDesign.html" class="worksMenuItem">Product Design</a></li>
     </ul>
     <div class="container">
       <h2>Web</h2>
@@ -116,7 +117,7 @@
             <a href="https://rio0614.github.io/bootstrap01/"  target="_blank"><img src="images/siteVisual_bootstrap.jpg" alt="bootstrapを利用したサイト制作" width="800px" height="447px"></a>
             <div class="infos">
               <div class="mainInfo">
-                <a href="https://rio0614.github.io/bootstrap01/"  target="_blank"><h3 class="webTitle">デモサイト(Bootstrap)</h3>
+                <a href="https://rio0614.github.io/bootstrap01/"  target="_blank"><h3 class="webTitle">Demo/ Bootstrap</h3>
                 <i class="far fa-window-restore"></i></a>
                 <ul class="webDetail">
                   <li>制作年月日：2021/09/30</li>
@@ -138,6 +139,33 @@
               </div>
             </div>
           </li>
+
+          <li class="workItem" id="corporation">
+            <a href="https://rio0614.github.io/corporation/"  target="_blank"><img src="images/siteVisual_corporation.jpg" alt="Sassによるサイト制作" width="800px" height="447px"></a>
+            <div class="infos">
+              <div class="mainInfo">
+                <a href="https://rio0614.github.io/corporation/"  target="_blank"><h3 class="webTitle">Demo/ Sass</h3>
+                <i class="far fa-window-restore"></i></a>
+                <ul class="webDetail">
+                  <li>制作年月日：2021/12/01</li>
+                  <li>制作期間：3days/ Coding</li>
+                  <li>制作環境：HTML/ CSS(Sass)</li>
+                </ul>
+              </div>
+              <div class="subInfo">
+                <p>Theme | Sassによるサイト制作（模写）
+                </p>
+                <div class="pointDescription">
+                  <p>Point | 制作の工夫</p>
+                  <ul>
+                    <li>変数を利用</li>
+                    <li>@mixinを使ったブレイクポイント記述</li>
+                    <li>パーフェクトピクセル（<a href="https://drive.google.com/file/d/1ylHbFjx_rzcaCMBuJIOH9zmCzgOtqgrV/view?usp=sharing" target="_blank">比較画像</a>）</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -150,9 +178,10 @@
           <p>Top</p>
         </a>
       </div>
-      <ul>
-        <li><a href="#web">Works.</a></li>
-        <li><a href="about.html">About.</a></li>
+      <ul class="footerMenu">
+        <li><a href="index.html" class="footerMenuItem">Home.</a></li>
+        <li><a href="web.html" class="footerMenuItem active">Works.</a></li>
+        <li><a href="about.html" class="footerMenuItem">About.</a></li>
       </ul>
       <p><small>Portfolio by Ryosuke Kimura</small></p>
     </div>
