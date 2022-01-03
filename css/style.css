@@ -177,7 +177,7 @@ footer p {
   position: fixed;
   z-index: 5;
   bottom: 70px;
-  right: 60px;
+  right: calc(50% - 1039px / 2);
   transition: all 0.5s;
 }
 #fixedBtn.show {
