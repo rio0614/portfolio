@@ -391,6 +391,9 @@ footer p {
   color: #4b4d4c;
   margin-bottom: 15px;
 }
+.common .pointDescription p {
+  margin-bottom: 5px;
+}
 .common .pointDescription ul {
   padding-left: 40px;
   color: #4b4d4c;
